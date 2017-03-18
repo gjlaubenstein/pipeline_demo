@@ -1,0 +1,14 @@
+version: 0.1
+
+environment_variables:
+  plain_text:
+    SOME_VAR: "some value"
+
+phases:
+  install:
+    commands:
+      - bundle install
+  build:
+    commands:
+      - rspec
+  post_build:
